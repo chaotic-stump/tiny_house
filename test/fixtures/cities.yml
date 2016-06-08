@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  year_est: MyString
+  population: 1
+  schools_rank: MyString
+
+two:
+  name: MyString
+  year_est: MyString
+  population: 1
+  schools_rank: MyString

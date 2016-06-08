@@ -1,0 +1,15 @@
+<%= form_for [@city, @cottage] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+
+  <%= f.label :sq_footage %>
+  <%= f.select :sq_footage %>
+
+  <%= f.label :price %>
+  <%= f.select :price, [true, false] %>
+
+  <%= f.submit %>
+<% end %>

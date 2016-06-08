@@ -1,0 +1,19 @@
+<h1>Cottages in <%= @city.name %></h1>
+<hr />
+
+<% if @cottages %>
+  <ul>
+    <% @cottages.each do |cottage| %>
+      <li>
+        <%= link_to @cottage.name, city_cottage_path(@city, cottage) %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <h3>No cottages, please add one!</h3>
+<% end %>
+
+<hr />
+
+<%= link_to 'List New Cottage', new_city_cottage_path(@city) %>
+<%= link_to 'Back', city_path(@city) %>

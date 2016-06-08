@@ -1,0 +1,2 @@
+module CottagesHelper
+end
